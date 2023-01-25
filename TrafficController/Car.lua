@@ -331,7 +331,7 @@ function Car:GeneratePart() : BasePart
 	part.CastShadow = false;
 	part.Name = "Car"
 	
-	part.Parent = workspace.CarContainer;
+	part.Parent = workspace;
 	
 	return part;
 end
