@@ -1,5 +1,5 @@
 --[[
-> TrafficController.lua
+> TrafficController.lua*
 	>> Car.lua
 	>> Lane.lua
 	>> Metrics.lua
@@ -23,9 +23,9 @@ local TrafficController = {
 		
 		Miles = 375;
 		MaxCars = 50;
-		Lanes = 100 * 10;
+		Lanes = 100;
 		
-		Visualize = false;
+		Visualize = true;
 		CollectPerformanceData = true;
 	},
 	
