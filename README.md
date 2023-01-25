@@ -1,5 +1,5 @@
 # trafficsim
-Traffic Simulation in lua, optimized with binary searches, table memory allocation, and much more. Video is simulating 10,000 cars at 60 fps.
+Traffic Simulation in lua, optimized with binary searches, table memory allocation, and much more. Video is simulating 10,000 cars at 60 fps. Recorded with gyazo gif.
 
 Structure:
 
