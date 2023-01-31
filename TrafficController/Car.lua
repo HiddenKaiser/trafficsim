@@ -144,8 +144,6 @@ end
 function Car:UpdateSpeedQueue(TICK: number, deltaTime: number)
 	
 	for i,q in pairs(self.speedQueue) do
-		local q = self.speedQueue[i];
-		
 		local elapsed = (TICK - q.triggered);
 		if elapsed >= CONSTANTS.ReactionTime then
 			self.speed += q.accel;
