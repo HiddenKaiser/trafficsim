@@ -128,7 +128,7 @@ function Car:Accelerate_Real(dir: number, deltaTime: number)
 end
 
 -- Account for human reaction time, implements a custom task scheduler
-function Car:Accelerate(dir: number, deltaTime: number?)
+function Car:Accelerate(dir: number, deltaTime: number)
 	local appliedSpeed = (CONSTANTS.Acceleration * deltaTime) * dir;
 	
 	self.predictedSpeed += appliedSpeed;
