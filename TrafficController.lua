@@ -12,7 +12,7 @@
 
 local TrafficController = {
 	CONSTANTS = {
-		ReactionTime = 375; -- in ms, 500 is the average human reaction time for traffic;
+		ReactionTime = 375; -- in ms, 375 is the average human reaction time for traffic;
 		
 		TargetSpeed = 80; -- in studs a second, determines car speed
 		SpeedLimit = 100; -- maximum speed
