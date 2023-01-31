@@ -112,7 +112,7 @@ function TrafficController.initialize()
 	
 	--// Metrics Setup
 	
-	local metrics = TrafficController.PerformanceMetrics; -- empty table {}
+	local metrics = TrafficController.PerformanceMetrics; -- empty dictionary {}
 	
 	metrics.SearchAvg = Data.AverageCounter.new("Binary Search Avg Iterations", true);
 	metrics.UpdateLoop = Data.AverageCounter.new("Avg Lane Update Time (in seconds)");
@@ -124,10 +124,12 @@ function TrafficController.initialize()
 	
 	local Lanes = TrafficController.Lanes;
 
+	-- create the specified number of lanes
 	for i = 1,CONSTANTS.Lanes do
 		table.insert(Lanes, Lane.new(CONSTANTS.Miles) )
 	end
 
+	-- populate the lane randomly with cars
 	for i,lane in pairs(Lanes) do
 		lane:Populate();
 	end
