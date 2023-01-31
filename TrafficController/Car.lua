@@ -65,6 +65,7 @@ function Car.new(mile: number, lane: any, speed: number?, part: BasePart?) : Car
 		lane = lane;
 		speed = speed or CONSTANTS.TargetSpeed;
 		predictedSpeed = speed or CONSTANTS.TargetSpeed;
+		roadLength = (lane.miles * CONSTANTS.CarLength);
 		
 		speedQueue = {};
 		events = {};
@@ -91,10 +92,6 @@ end
 
 -- get rid of redundancy and save some processing power
 function Car:GetRoadLength()
-	if not self.roadLength then
-		self.roadLength = (self.lane.miles * CONSTANTS.CarLength);
-	end
-	
 	return self.roadLength;
 end
 
