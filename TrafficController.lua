@@ -112,7 +112,7 @@ function TrafficController.initialize()
 	
 	--// Metrics Setup
 	
-	local metrics = TrafficController.PerformanceMetrics;
+	local metrics = TrafficController.PerformanceMetrics; -- empty table {}
 	
 	metrics.SearchAvg = Data.AverageCounter.new("Binary Search Avg Iterations", true);
 	metrics.UpdateLoop = Data.AverageCounter.new("Avg Lane Update Time (in seconds)");
