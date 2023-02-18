@@ -377,7 +377,7 @@ function Lane:Populate()
 
 	self.carObjects[1]:SetSpeed(CONSTANTS.TargetSpeed);
 end
-
+-- Made by HiddenKaiser
 
 function Lane:NewAttachment(pos)
 	local part: BasePart = Instance.new("Part");
